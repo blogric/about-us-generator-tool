@@ -1,63 +1,59 @@
-```gitignore
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-.venv/
-.ENV
-.ENV.local
-
-# Logs
-*.log
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
+```
 # Environment
 .env
 .env.local
 *.env.*
 
-# Build/dist
-build/
-dist/
-*.egg-info/
+# Logs and temp files
+*.log
+*.tmp
+*.swp
 
-# Testing
-.coverage
-htmlcov/
-.coverage.*
-.nyc_output/
-coverage-final.json
+# Editors
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
 
 # Dependencies
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+venv/
+.venv/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+dist/
+build/
+target/
+.gradle/
 
-# Compression
+# Compiled files
+*.pyc
+*.class
+*.o
+*.exe
+*.dll
+*.so
+*.a
+*.obj
+*.out
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Compressed files
 *.zip
-*.tar.gz
-*.tar.bz2
-*.tar.xz
 *.gz
-*.rar
-*.7z
 *.tar
+*.tgz
 *.bz2
 *.xz
+*.7z
+*.rar
 *.zst
 *.lz4
 *.lzh
@@ -68,20 +64,8 @@ yarn-error.log*
 *.Z
 *.lz
 *.lzo
-
-# Temporary files
-*.tmp
-*~
-```
-
-Wait, let me reconsider this. Looking at the added files again:
-- `README.md` - documentation
-- `app.py` - source code
-- `run.sh` - script
-- `templates/index.html` - template/html
-
-These are all source files, not build artifacts, dependencies, or temporary files. No compiled artifacts or dependency directories are present in the changes.
-
-```gitignore
-
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
 ```
