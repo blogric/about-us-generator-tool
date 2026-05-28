@@ -1,1 +1,1 @@
-Nothing needs to be added to the .gitignore file based on the provided changes. The modification of 'launch.bat' does not require any new ignore rules, as .bat files are typically part of the source code and not build artifacts or temporary files.
+Nothing needs to be added to .gitignore since only a batch file (launch.bat) was modified, which is a source/config file and not a build artifact, dependency, or temporary file.
