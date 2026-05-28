@@ -74,14 +74,15 @@ echo ==========================================
 echo   Starting Web Server...
 echo ==========================================
 echo.
-echo Opening browser automatically...
+echo Opening browser in 3 seconds...
 echo If it doesn't open, manually go to: http://localhost:5000
 echo.
 echo Press Ctrl+C to stop the server.
 echo.
 
-REM Start the Flask application and open browser
-start "" cmd /c "timeout /t 2 >nul && start http://localhost:5000"
-python app.py
+REM Wait 3 seconds then open browser
+timeout /t 3 /nobreak >nul
+start http://localhost:5000
 
-pause
+REM Start the Flask application (runs until Ctrl+C)
+python app.py
